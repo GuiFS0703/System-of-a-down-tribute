@@ -1,0 +1,378 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    transition: 0.5s ease-in-out;
+    color: gray;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+a:hover {
+    color: #C80404;
+}
+
+
+h2{
+    font-size: 3vw;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    padding-block: 1vw;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+    margin-inline: 2vw;
+    background-color: transparent;
+}
+
+header img {
+    width: 7vw;
+}
+
+header nav ul{
+display: flex;
+gap: 2vw;
+}
+
+header nav a {
+    text-decoration: none;
+    color: gray;
+    list-style: none;
+}
+
+.sobreDatas {
+    margin-left: 15px;
+  }
+
+#SOBRE {
+    background-color: #C80404;
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#SOBRE h2 {
+    margin: 2vw;
+}
+
+canvas {
+    width: 50vw;
+    height: 50vw;
+    background-color: #6e1414;
+    opacity: 0.5;
+    border-radius: 100%;
+    position: absolute;
+    right: 1vw;
+    z-index: 1;
+}
+
+.datasCima {
+    display: flex;
+    width: 90%;
+    z-index: 2;
+}
+
+.sobreDatas {
+    width: 25%;
+}
+
+.linhaDoTempo {
+    width: 90%;
+    height: 3px;
+    background-color: white;
+}
+
+#PRODUTOS {
+    background-color: white;
+    color: black;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+    z-index: 5;
+}
+
+
+
+
+#PRODUTOS .carrossel {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#PRODUTOS .carrossel .produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#PRODUTOS .carrossel .produto img{
+    width: 10vw;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#PRODUTOS .carrossel .produto img:hover {
+    transform: scale(1.1); /*aproxima em 10% */
+}
+
+#RODAPE {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 2vw;
+}
+
+#RODAPE .logo-redes1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#RODAPE .logo-redes1 img {
+    width: 30vw;
+}
+
+#RODAPE .logo-redes1 .redes {
+    gap: 1vw;
+    display: flex;
+}
+
+#RODAPE .logo-redes1 .redes i {
+    font-size: 2vw;
+}
+
+#RODAPE .social-medias {
+ display: flex;
+ gap: 2vw;
+}
+#CONTATO
+{
+    padding: 5vw;
+    background-color: #0C0C0C;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#CONTATO form {
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+#CONTATO form input, #CONTATO form textarea {
+    background-color: transparent;
+    color: white;
+    padding: 1vw;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 25vw;
+}
+
+
+#CONTATO form input:focus, #CONTATO form textarea:focus{
+    border: 2px solid white;
+
+}
+
+
+#CONTATO form button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 1vw;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+#CONTATO form button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+
+    header img {
+        width: 7vw;
+        margin-bottom: 2vw;
+    }
+
+    header {
+        font-size: 2vw
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    #SOBRE {
+        padding: 5vw 3vw;
+    }
+
+    #PRODUTOS {
+        padding: 4vw;
+    }
+
+    canvas {
+     display: none;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+#RODAPE .logo-redes1 .redes i {
+    font-size: 3vw;
+}
+
+#RODAPE .social-medias i { 
+    font-size: 3vw;
+}
+
+}
+
+
+@media (max-width: 485px) {
+
+    header img {
+        width: 10vw;
+        margin-bottom: 3vw;
+    }
+
+    header {
+        font-size: 3vw
+    }
+
+    h2 {
+        font-size: 4.5vw;
+    }
+
+    #SOBRE {
+        padding: 5vw 3vw;
+    }
+
+    #PRODUTOS {
+        padding: 5vw;
+    }
+
+    canvas {
+     display: none;
+    }
+
+    #SOBRE .sobreDatas, #SOBRE p {
+        font-size: 2.5vw;
+        width: 60vw;
+    }
+
+    p {
+        font-size: 3vw;
+      } 
+
+    #SOBRE .sobreDatas h2 {
+        text-align: center;
+    }
+
+    .datasCima {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #PRODUTOS .carrossel .produto img {
+        width: 15vw;
+    }
+
+#RODAPE .logo-redes1 .redes i {
+    font-size: 3vw;
+}
+
+#RODAPE .social-medias i { 
+    font-size: 3vw;
+}
+
+
+#CONTATO form input, #CONTATO form textarea{
+    width: 35vw;
+}
+
+#CONTATO form input::placeholder, #CONTATO form textarea::placeholder {
+    font-size: 2vw;
+}
+
+#CONTATO button {
+    font-size: 2vw;
+}
+
+#PRODUTO a p {
+    font-size: 2vw;
+}
+
+footer p {
+    font-size: 2vw;
+}
+
+}
+
+@media (max-width: 321px) {
+    #CONTATO form input::placeholder, #CONTATO form textarea::placeholder {
+        width: 15vw;
+        height: 5vw;
+        padding: 1vw;
+    }
+
+    #CONTATO form input::placeholder, #CONTATO form textarea::placeholder {
+        font-size: 2.5vw;
+    }
+    
+        #PRODUTOS .carrossel .produto img {
+            width: 20vw;
+        }
+    
+          header img {
+            width: 12vw;
+            margin-bottom: 3vw;
+        }
+    
+          p {
+            font-size: 2vw;
+        }
+    
+     #SOBRE .sobreDatas, #SOBRE p {
+        margin: 0;
+     }
+
+     footer p {
+        font-size: 2.5vw;
+     }
+}
